@@ -19,10 +19,33 @@
 	<main>
 		<section class="choice-assortment">
 			<form>
-				<label for="popularity">Сортировка:</label>
-				<label for="range">Цена: 100 руб. – 500 руб.<!--я так понимаю это нужно будет потом сделать по другому, чтобы диапазон менялся от ползунка--></label>
-				<label for="fatcontent">Жирность</label>
-				<input type="" name="">
+				<fieldset class="sorting">
+					<label for="sorting-for-populars">Сортировка</label>
+					<select name="sorting-for-populars" id="sorting-for-populars">
+						<optgroup>
+							<option value="1">по популярности</option>
+						</optgroup>
+					</select>
+					<label for="price">Цена:</label>
+					<input type="range" name="price" id="price" min="100" max="500" step="5">
+					<input type="range" name="price" id="price" min="100" max="500" step="5">
+					<fieldset>
+						<label for="fatrate">Жирность:</label><!--как здесь быть с label, правильно ли я обернул каждый radius в label? можно ли вообще label вкладывать в label? И если можно, то как мне привязать основной label "жирность" ко всем radius-->
+					    <label><input type="radio" name="fatrate" >0%</label>
+						<label><input type="radio" name="fatrate">до 10%</label>
+						<label><input type="radio" name="fatrate">до 30%</label>
+						<label><input type="radio" name="fatrate">выше 30%</label>
+					</fieldset>
+				</fieldset>
+				<fieldset class="sorting-toppings">
+					<label for="toppings">Наполнители</label>
+					<label><input type="checkbox" name="toppings" id="toppings" checked>шоколадные</label>
+					<label><input type="checkbox" name="toppings" id="toppings" checked>сахарные присыпки</label>
+					<label><input type="checkbox" name="toppings" id="toppings" value="фрукты">фрукты</label>
+					<label><input type="checkbox" name="toppings" id="toppings">сиропы</label>
+					<label><input type="checkbox" name="toppings" id="toppings">джемы</label>
+					<input type="submit" name="sorting" value="Применить">
+				</fieldset>
 			</form>
 		</section>
 		<section>
