@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normilize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  	<header>
+  	<header class="index-header">
   		<!-- сделать div с logo, потом nav, кнопки обернуть не параграф а в див и добавить классы. В хедере будет контейнер, хедер, класс хедер, положить див с классом контейнер и потом в этот контейнер положить див с логотипом и навигацию. -->
-	    <nav>
-	    	<ul>
-	    		<li><a href=""><img src=""http://placehold.it/154x64""></a></li>
+        <div class="index-logo"><img src="img/logo.png"></div>
+	    <nav class="main-navigation">
+	    	<ul class="links none-marker">
 	    		<li><a href="">Каталог</a>
                     <ul><li><a href="">Новинки</a></li>
                         <li><a href="">Сливочное</a></li>
@@ -23,7 +26,7 @@
 	    </nav>
 	    <!--Кнопки обернуть в список, сделать ссылки, а потом доделаем.-->  
 	    <div class="buttons">
-             <ul> 
+             <ul class="none-marker"> 
     	    	<li><button>поиск</button></li>
     	    	<li><button>вход</button></li>
     	    	<li><button>корзина</button></li>
@@ -31,18 +34,18 @@
 	    </div>
 	    <p class="header-contacts">вставить телефоны и график работы, сделать ссылку на телефон</p>
 	    <!--тут будет слайдер с рожками мороженого. Не нашел в задании, должна ли быть вся картинка ссылкой куда-нибудь или нужно чтобы были кнопки-->
-        <section class="icecream-cone">
-            <ul>
+        <section class="icecream-carousel">
+            <ul class="none-marker icecream-cone">
                 <li><img src="img/icecream_cone1.png" alt="">
-                    <span>Крем-брюле и пломбир с малиновым джемом</span>
+                    <span class="icecream-cone-text">Крем-брюле и пломбир с малиновым джемом</span>
                     <a href=""></a> 
                 </li>
                 <li><img src="img/icecream_cone2.png">
-                    <span>Шоколадный пломбир и лимонный сорбет </span>
+                    <span class="icecream-cone-text">Шоколадный пломбир и лимонный сорбет </span>
                     <a href=""></a>
                 </li>
                 <li><img src="img/icecream_cone3.png">
-                    <span>Пломбир с помадкой и клубничный щербет</span>
+                    <span class="icecream-cone-text">Пломбир с помадкой и клубничный щербет</span>
                     <a href=""></a> 
                 </li>
             </ul>
@@ -52,16 +55,16 @@
     	<!--добавить семантичных классов-->
     	<section class="main-content">
             <h2 hidden="true">Выгодные предложения</h2>
-	    		<div><p><h3>Малинка даром!</h3>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+	    		<div class="profitable-offer"><img src="img/raspberries.png"><p><h3>Малинка даром!</h3>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 	    			<button type="button">Хочу варенье!</button>
 	    		</div>
-	    		<div><p><h3>Шоколадки даром!</h3>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+	    		<div class="profitable-offer"><img src="img/chocolate-chips.png"><p><h3>Шоколадки даром!</h3>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 	    			<button type="button">Хочу шоколадки!</button>
     			</div>
     	</section>
     	<section class="main-content">
             <h2 hidden="true">ассортимент мороженого</h2>
-    		<ul class="icecream">
+    		<ul class="icecream none-marker">
     			<li><a href=""><img src="img/1.png" alt="" class="icecream_circle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><span class="price_font">310 </span><span class="ruble_font">₽</span><span class="kilogram_font">/кг</span></li>
     			<li><a href=""><img src="img/2.png" alt="" class="icecream_circle">Сливочно-кофейное с кусочками шоколада</a><span class="price_font">380 </span><span class="ruble_font">₽</span><span class="kilogram_font">/кг</span></li>
     			<li><a href=""><img src="img/3.png" alt="" class="icecream_circle">Сливочно-клубничное с присыпкой из белого шоколада</a><span class="price_font">355 </span><span class="ruble_font">₽</span><span class="kilogram_font">/кг</span></li>
@@ -70,7 +73,7 @@
     	</section>
     	<section class="main-content about-shop">
             <h2 class="about-shop_caption">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-            <ul class="icecream-list">
+            <ul class="icecream-list none-marker>
                 <li class="icecream-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
                 <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
                 <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
@@ -90,21 +93,20 @@
         <!--тут будет карта--><!--section с картой, в секшон лежит див, внутри карта, а рядом текст, и div position absolute-->
     </section>
     <footer>
-        <ul class="social-button">
+        <ul class="social-button none-marker>
             <li><a href="https://twitter.com/?lang=ru" target="_blank"><img src="img/twitter.svg" alt="twitter">twitter</a></li>
             <li><a href="https://www.instagram.com/?hl=ru" target="_blank"><img src="img/instagramm.svg" alt="instagram">instagram</a></li>
-            <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>facebook</li>
-            <li><a href="https://vk.com" target="_blank"><img src="img/vk.svg" alt="vkontakte"></a>vkontakte</li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.svg" alt="facebook">facebook</a></li>
+            <li><a href="https://vk.com" target="_blank"><img src="img/vk.svg" alt="vkontakte">vkontakte</a></li>
         </ul>
-        <ul class="legal-information">
+        <ul class="legal-information none-marker">
             <li><a href="">Для поставщиков</a></li>
             <li><a href="">Наши документы</a></li>
             <li><a href="">О производстве</a></li>
             <li><a href="">Экологические стандарты</a></li>
         </ul>
-        <ul class="web-studio">
-            <li><img src=""></li>
-            <li>Сделано в <a href=""><img src="img/logo-htmlacademy-small.svg" alt="HTMLAcademy" target="_blank">HTML Academy</a> © 2017</li>
+        <ul class="web-studio none-marker">
+            <li>Сделано в <a href="https://up.htmlacademy.ru/htmlcss/22"><img src="img/logo-htmlacademy-small.svg" alt="HTMLAcademy" target="_blank"><span class="developer">HTML Academy</span></a> © 2017</li>
         </ul>
     </footer>
   </body>

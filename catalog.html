@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normilize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header>
   		<!-- сделать div с logo, пото nav, кнопки обернуть не параграф а в див и добавить классы. В хедере будет контейнер, хедер, класс хедер, положить див с классом контейнер и потом в этот контейнер положить див с логотипом и навигацию. -->
 	    <nav>
-	    	<ul>
+	    	<ul class="none-marker">
 	    		<li><a href=""><img src=""http://placehold.it/154x64""></a></li>
 	    		<li><a href="">Каталог</a> <!--после ссылки сделать ul с меню--></li>
 	    		<li><a href="">Доставка и оплата</a></li>
@@ -49,7 +52,7 @@
 			</form>
 		</section>
 		<section>
-			<ul>
+			<ul class="links none-marker icecream">
 				<li><a href=""><img src="img/1.png" alt="" class="icecream_circle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><span class="price_font">310 </span><span class="ruble_font">₽</span><span class="kilogram_font">/кг</span>
 				</li>
 				<li><a href=""><img src="img/2.png" alt="" class="icecream_circle">Сливочно-кофейное с кусочками шоколада</a><span class="price_font">380 </span><span class="ruble_font">₽</span><span class="kilogram_font">/кг</span>
@@ -78,21 +81,20 @@
 		</section>
 	</main>
 	 <footer>
-        <ul class="social-button">
+        <ul class="social-button none-marker">
             <li><a href="https://twitter.com/?lang=ru"><img src="img/twitter.svg" alt="twitter"></a></li>
             <li><a href="https://www.instagram.com/?hl=ru"><img src="img/instagramm.svg" alt="instagram"></a></li>
             <li><a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a></li>
             <li><a href="https://vk.com/"><img src="img/vk.svg" alt="vk"></a></li>
         </ul>
-        <ul class="legal-information">
+        <ul class="legal-information none-marker">
             <li><a href="">Для поставщиков</a></li>
             <li><a href="">Наши документы</a></li>
             <li><a href="">О производстве</a></li>
             <li><a href="">Экологические стандарты</a></li>
         </ul>
-        <ul class="web-studio">
-            <li><img src=""></li>
-            <li>Сделано в <a href=""><img src="img/logo-htmlacademy-small.svg" alt="HTMLAcademy">HTML Academy </a>© 2017</li>
+        <ul class="web-studio none-marker">
+            <li>Сделано в <a href="https://up.htmlacademy.ru/htmlcss/22"><img src="img/logo-htmlacademy-small.svg" alt="HTMLAcademy"><span class="developer">HTML Academy</span></a>© 2017</li>
         </ul>
     </footer>
   </body>

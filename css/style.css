@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "roboto", sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: #849d8f;  
+	/*так-как нет фоновой картинки, то задавать для фона значения типа background-positiond/repeat не стал*/
+}
+a {
+	/*я отменил стили для ссылок, так-как мне кажется в макете у ссылок другое подчеркивание, но возможно, мне кажется*/
+	text-decoration: none;
+	color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.none-marker {
+	/*стиль задан всем ul спискам и отменяет маркеры, но вообще в случае с Глейси все списки не промаркированы, 
+	не понимаю, почему критерий запрещает задавать глобальные свойства для тега ul*/
+	list-style: none;
+}
+.main-navigation {
+    font-size: 16px;
+    line-height: 1.13;
+}
+.icecream-carousel {
+
+}
+.icecream-cone img {
+
+	
+
+}
+.icecream-cone-text {
+	display: inline-block;
+	position: relative;
+	font-size: 59.5px;
+
+}
+.profitable-offer {
+	width: 420px;
+	height: 229px;
+}
+.icecream li {
+	width: 267px;
+	height: 294px;
+	margin: auto;
+}
+.icecream_circle {
+	margin-bottom: 16px;
+
+}
