@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-
+    width: 1200px;
 	font-family: "roboto", sans-serif;
 	font-weight: bold;
 	color: #ffffff;
@@ -34,8 +34,7 @@ a {
 
 }
 .icecream-cone-text {
-	display: inline-block;
-	position: relative;
+	
 	font-size: 59.5px;
 
 }
@@ -46,9 +45,14 @@ a {
 .icecream li {
 	width: 267px;
 	height: 294px;
-	margin: auto;
+
 }
 .icecream_circle {
 	margin-bottom: 16px;
 
+}
+.index-flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
 }
