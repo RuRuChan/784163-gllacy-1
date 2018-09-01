@@ -51,8 +51,14 @@ a {
 	margin-bottom: 16px;
 
 }
-.index-flex {
+/*.index-flex {
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
+}*/
+.icecream {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	margin: 8px;
 }
