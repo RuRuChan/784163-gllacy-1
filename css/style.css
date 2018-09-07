@@ -14,9 +14,25 @@ a {
 	text-decoration: none;
 	color: #ffffff;
     text-align: center;
-    border-bottom: 1px solid;
 }
-.none-marker {
+.index-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.profitable-offer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.profitable-offer_item {
+	margin: 0 26px;
+}
+.main-content {
+
+}
+ul.none-marker {
 	/*стиль задан всем ul спискам и отменяет маркеры, но вообще в случае с Глейси все списки не промаркированы, 
 	не понимаю, почему критерий запрещает задавать глобальные свойства для тега ul*/
 	list-style: none;
@@ -28,19 +44,20 @@ a {
 .icecream-carousel {
 
 }
-.icecream-cone img {
 
-	
+.icecream-cone img {
 
 }
 .icecream-cone-text {
 	
-	font-size: 59.5px;
+	font-size: 59px;
 
 }
-.profitable-offer {
+.profitable-offer_item {
+	display: block;
 	width: 420px;
 	height: 229px;
+	margin-bottom: 1px;
 }
 .icecream li {
 	width: 267px;
@@ -51,14 +68,17 @@ a {
 	margin-bottom: 16px;
 
 }
-/*.index-flex {
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-}*/
+
 .icecream {
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
 	margin: 8px;
+	min-height: 267px;
+}
+.about-shop {
+	background-image: url(img/vaffles.png);
+	width: 1146px;
+	height: 306px;
+	background-position: center center;
 }
