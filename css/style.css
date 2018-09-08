@@ -105,4 +105,10 @@ ul.none-marker {
 	width: 1146px;
 	height: 306px;
 	background-position: center center;
+	color: #323232;
+}
+.icecream-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
