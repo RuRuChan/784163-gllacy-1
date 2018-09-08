@@ -57,11 +57,11 @@ a {
 	justify-content: space-between; /*почему-то элементы списка не реагируют на space-between, пришлось margin использовать в следующем селекторе*/
 	flex-direction: row;
 	position: relative;
-	right: 20px
+	
 
 }
 .icecream li {
-	margin: auto 14px;
+	/*margin: auto 14px;*/
 }
 .main-content {
     border: 2px solid red;
@@ -88,23 +88,18 @@ ul.none-marker {
 
 }
 
-.icecream li {
+/*.icecream li {
 	width: 267px;
 	
 
 }
+*/
 /*.icecream_circle {
 	margin-bottom: 16px;
 
 }*/
 
-.icecream {
-	display: flex;
-	justify-content: space-around;
-	align-items: baseline;
-	margin: 8px;
-	min-height: 267px;
-}
+
 .about-shop {
 	background-image: url(../img/vaffles.png);
 	width: 1146px;
