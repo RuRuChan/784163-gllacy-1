@@ -1,13 +1,16 @@
+
 body {
-	margin: 0;
+	margin: auto;
 	padding: 0;
     width: 1200px;
+    background-position: top center;
 	font-family: "roboto", sans-serif;
 	font-weight: bold;
 	color: #ffffff;
 
 	background-color: #849d8f;  
-	/*так-как нет фоновой картинки, то задавать для фона значения типа background-positiond/repeat не стал*/
+	border: 3px solid black;
+	/*рамка временная, для позициониования. Как закончу убрать.*/
 }
 a {
 	/*я отменил стили для ссылок, так-как мне кажется в макете у ссылок другое подчеркивание, но возможно, мне кажется*/
@@ -24,13 +27,44 @@ a {
 .profitable-offer {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
+	width: 1146px;
+    height: 306px;
+    border-radius: 15px;
+    position: relative;
+    border: 3px solid red;
 }
 .profitable-offer_item {
-	margin: 0 26px;
+	position: relative;
+	
+}
+.profitable-offer_item:last-child {
+	position: relative;
+	left: 40px;
+	
+}
+.profitable-offer_item img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.profitable-offer_item p {
+	position: absolute;
+}
+.icecream {
+	display: flex;
+	justify-content: space-between; /*почему-то элементы списка не реагируют на space-between, пришлось margin использовать в следующем селекторе*/
+	flex-direction: row;
+	position: relative;
+	right: 20px
+
+}
+.icecream li {
+	margin: auto 14px;
 }
 .main-content {
-
+    border: 2px solid red;
 }
 ul.none-marker {
 	/*стиль задан всем ul спискам и отменяет маркеры, но вообще в случае с Глейси все списки не промаркированы, 
@@ -53,21 +87,16 @@ ul.none-marker {
 	font-size: 59px;
 
 }
-.profitable-offer_item {
-	display: block;
-	width: 420px;
-	height: 229px;
-	margin-bottom: 1px;
-}
+
 .icecream li {
 	width: 267px;
-	height: 294px;
+	
 
 }
-.icecream_circle {
+/*.icecream_circle {
 	margin-bottom: 16px;
 
-}
+}*/
 
 .icecream {
 	display: flex;
@@ -77,7 +106,7 @@ ul.none-marker {
 	min-height: 267px;
 }
 .about-shop {
-	background-image: url(img/vaffles.png);
+	background-image: url(../img/vaffles.png);
 	width: 1146px;
 	height: 306px;
 	background-position: center center;
